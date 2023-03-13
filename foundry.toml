@@ -1,0 +1,19 @@
+[profile.default]
+optimizer = true
+optimizer_runs = 200
+solc-version = "0.8.16"
+verbosity = 3
+remappings = [
+  '@rari-capital/solmate/src=node_modules/@rari-capital/solmate/src'
+]
+src = 'contracts'
+out = 'out'
+libs = ['node_modules', 'forge-lib']
+test = 'test'
+cache_path  = 'cache-foundry'
+gas_reports = ["D3MM", "D3Proxy"]
+
+[fmt]
+multiline_func_header = 'params_first'
+
+# See more config options https://github.com/gakonst/foundry/tree/master/config
